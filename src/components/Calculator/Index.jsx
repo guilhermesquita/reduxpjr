@@ -1,6 +1,7 @@
 import React from "react";
+import { connect } from 'react-redux'
 
-export function Calculator(){
+function Calculator(){
     return(
         <>
             <input type="text"  placeholder='a'/>
@@ -16,3 +17,5 @@ export function Calculator(){
         </>
     )
 }
+
+export default connect()(Calculator)
